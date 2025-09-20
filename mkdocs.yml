@@ -1,0 +1,50 @@
+site_name: My Docs
+
+theme:
+  name: material
+
+  # Fonts
+  font:
+    code: Roboto Mono
+
+  # Language
+  language: en
+
+  # Color palettes with dark as default
+  palette:
+    # Dark mode (default)
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+# Navigation (Nav bar)
+nav:
+  - Home: index.md
+  - About: about.md
+  - Guides:
+      - Getting Started: guides/getting-started.md
+      - Advanced: guides/advanced.md
+  - API: api.md
+  - Contact: contact.md
+
+# Footer content
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/yourhandle
+  copyright: "© 2025 My Docs. All rights reserved."
